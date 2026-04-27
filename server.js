@@ -19,6 +19,7 @@ app.use(cors({
   optionsSuccessStatus: 200
 }));
 app.use(express.json());
+
 // Serve frontend static files
 app.use(express.static('public'));
 

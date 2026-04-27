@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sakshi Karpe — Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- ── LOADER ── -->
+  <div class="loader" id="loader">
+    <div class="loader-text">
+      <span>S</span><span>A</span><span>K</span><span>S</span><span>H</span><span>I</span>
+      <span>&nbsp;</span>
+      <span>K</span><span>A</span><span>R</span><span>P</span><span>E</span>
+    </div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+
+  <!-- ── NAV ── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo"><span class="logo-bracket">&lt;</span>SK<span class="logo-bracket">/&gt;</span></div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#timeline">Journey</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#cocurricular">Co-Curricular</a></li>
+        <li><a href="#extracurricular">Extra-Curricular</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <!-- GitHub & LinkedIn in Nav -->
+      <div class="nav-socials">
+        <a href="https://github.com/karpesakshi-24" target="_blank" class="nav-social-icon" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/sakshi-karpe-a77474248/" target="_blank" class="nav-social-icon" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+      <a href="#contact" class="nav-cta">Connect</a>
+      <button class="hamburger" id="hamburger" aria-label="menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#home" onclick="closeMobile()">Home</a></li>
+      <li><a href="#about" onclick="closeMobile()">About</a></li>
+      <li><a href="#timeline" onclick="closeMobile()">Journey</a></li>
+      <li><a href="#projects" onclick="closeMobile()">Projects</a></li>
+      <li><a href="#cocurricular" onclick="closeMobile()">Co-Curricular</a></li>
+      <li><a href="#extracurricular" onclick="closeMobile()">Extra-Curricular</a></li>
+      <li><a href="#contact" onclick="closeMobile()">Contact</a></li>
+    </ul>
+    <!-- Mobile social links -->
+    <div class="mobile-socials">
+      <a href="https://github.com/karpesakshi-24" target="_blank" class="mobile-social-btn">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/sakshi-karpe-a77474248/" target="_blank" class="mobile-social-btn linkedin">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════
+       HERO
+  ════════════════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-eyebrow reveal">
+        <span class="dot"></span> B.Tech CSE · MIT Chh. Sambhajinagar · Batch 2022–2026
+      </div>
+      <h1 class="hero-name reveal">
+        Sakshi<br/><span class="name-accent">Karpe</span>
+      </h1>
+      <p class="hero-tagline reveal">
+        Full-stack developer &amp; AI enthusiast building<br class="hero-br"/>
+        real-world solutions with React, Next.js &amp; beyond.
+      </p>
+      <div class="hero-chips reveal">
+        <span class="chip">React / Next.js</span>
+        <span class="chip">Full Stack Dev</span>
+        <span class="chip">Generative AI</span>
+        <span class="chip">UI/UX · Figma</span>
+        <span class="chip">🏆 Hackathon Winner</span>
+      </div>
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+      <!-- Hero social proof row -->
+      <div class="hero-social-row reveal">
+        <a href="https://github.com/karpesakshi-24" target="_blank" class="hero-social-pill">
+          <i class="fab fa-github"></i>
+          <span>karpesakshi-24</span>
+        </a>
+        <span class="hero-social-divider">·</span>
+        <a href="https://www.linkedin.com/in/sakshi-karpe-a77474248/" target="_blank" class="hero-social-pill linkedin-pill">
+          <i class="fab fa-linkedin"></i>
+          <span>sakshi-karpe</span>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       ABOUT
+  ════════════════════════════════ -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left reveal">
+          <div class="section-label">Who I Am</div>
+          <h2 class="section-title">Developer who<br/>builds things that <em>matter</em></h2>
+          <p class="about-desc">
+            I'm <strong>Sakshi Santosh Karpe</strong>, a B.Tech CSE student (CGPA: 8.63) at
+            <strong>G.S. Mandal's Maharashtra Institute of Technology, Chh. Sambhajinagar</strong>.
+          </p>
+          <p class="about-desc">
+            I build full-stack apps and AI-powered tools using React, Next.js, Node.js, and Firebase.
+            Currently interning at <strong>Paarsh Infotech</strong>, gaining real-world industry experience
+            while completing my final year.
+          </p>
+          <p class="about-desc">
+            From <strong>winning hackathons</strong> to coordinating college events and leading as CSE
+            Department Secretary — I combine strong technical skills with leadership to create real impact.
+          </p>
+          <div class="about-links">
+            <a href="mailto:karpes603@gmail.com" class="btn btn-outline">
+              <i class="fa fa-envelope"></i> karpes603@gmail.com
+            </a>
+            <a href="https://github.com/karpesakshi-24" target="_blank" class="btn btn-outline">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/sakshi-karpe-a77474248/" target="_blank" class="btn btn-outline btn-linkedin">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+          </div>
+        </div>
+        <div class="about-right reveal">
+          <div class="stats-grid">
+            <div class="stat-box">
+              <div class="stat-number" data-count="8" data-decimal=".63">8</div>
+              <div class="stat-label">CGPA · B.Tech CSE</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number" data-count="3">0</div>
+              <div class="stat-label">Projects Built</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number" data-count="13">0</div>
+              <div class="stat-label">Certificates Earned</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number" data-count="1">0</div>
+              <div class="stat-label">Hackathon Win 🏆</div>
+            </div>
+          </div>
+          <div class="skills-block">
+            <div class="skills-cat-row">
+              <div class="skills-cat">
+                <div class="skills-cat-label frontend-label">Frontend</div>
+                <div class="skills-tags">
+                  <span class="tag-frontend">React</span>
+                  <span class="tag-frontend">Next.js</span>
+                  <span class="tag-frontend">TypeScript</span>
+                  <span class="tag-frontend">Tailwind CSS</span>
+                  <span class="tag-frontend">Shadcn UI</span>
+                  <span class="tag-frontend">HTML/CSS</span>
+                </div>
+              </div>
+              <div class="skills-cat">
+                <div class="skills-cat-label backend-label">Backend</div>
+                <div class="skills-tags">
+                  <span class="tag-backend">Node.js</span>
+                  <span class="tag-backend">Express.js</span>
+                  <span class="tag-backend">REST API</span>
+                </div>
+              </div>
+              <div class="skills-cat">
+                <div class="skills-cat-label db-label">Database &amp; Cloud</div>
+                <div class="skills-tags">
+                  <span class="tag-db">MySQL</span>
+                  <span class="tag-db">Firebase</span>
+                  <span class="tag-db">Convex</span>
+                </div>
+              </div>
+              <div class="skills-cat">
+                <div class="skills-cat-label tools-label">Tools &amp; Design</div>
+                <div class="skills-tags">
+                  <span class="tag-tools">Git / GitHub</span>
+                  <span class="tag-tools">Vercel</span>
+                  <span class="tag-tools">Figma</span>
+                  <span class="tag-tools">Wix Studio</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       TIMELINE — 4-YEAR JOURNEY
+  ════════════════════════════════ -->
+  <section class="timeline-section" id="timeline">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">My Journey</div>
+        <h2 class="section-title">4 Years of<br/><em>Growth &amp; Impact</em></h2>
+      </div>
+      <div class="year-filter reveal">
+        <button class="yfbtn active" data-year="all">All</button>
+        <button class="yfbtn" data-year="1">Year 1</button>
+        <button class="yfbtn" data-year="2">Year 2</button>
+        <button class="yfbtn" data-year="3">Year 3</button>
+        <button class="yfbtn" data-year="4">Year 4</button>
+      </div>
+
+      <div class="timeline" id="timeline-list">
+
+        <!-- ── YEAR 1 ── -->
+        <div class="tl-item tl-year-block" data-year="1">
+          <div class="tl-year-marker">Year 1 · 2022–23</div>
+        </div>
+        <div class="tl-item reveal" data-year="1">
+          <div class="tl-connector"><div class="tl-dot event"></div><div class="tl-line"></div></div>
+          <div class="tl-card">
+            <div class="tl-card-top"><div class="tl-badge event">Competition</div><div class="tl-date">Jan 2023</div></div>
+            <h3 class="tl-title">EventZen — Template Designing Competition</h3>
+            <p class="tl-org"><i class="fa fa-building"></i> IGNITE Student Association · MIT Aurangabad</p>
+            <p class="tl-desc">Participated in the EventZen Template Designing Competition held during 12–14 January 2023 by the IGNITE Student Association, Dept. of Emerging Science &amp; Technology, MIT Aurangabad.</p>
+            <div class="tl-tags"><span>Design</span><span>Templates</span><span>MIT IGNITE</span></div>
+          </div>
+        </div>
+        <div class="tl-item reveal" data-year="1">
+          <div class="tl-connector"><div class="tl-dot event"></div><div class="tl-line"></div></div>
+          <div class="tl-card">
+            <div class="tl-card-top"><div class="tl-badge event">Competition</div><div class="tl-date">Jan 2023</div></div>
+            <h3 class="tl-title">EventZen — Coding Competition</h3>
+            <p class="tl-org"><i class="fa fa-building"></i> IGNITE Student Association · MIT Aurangabad</p>
+            <p class="tl-desc">Participated in the EventZen Coding Competition held during 12–14 January 2023, organized by IGNITE Student Association, Dept. of Emerging Science &amp; Technology, MIT Aurangabad.</p>
+            <div class="tl-tags"><span>Coding</span><span>MIT IGNITE</span></div>
+          </div>
+        </div>
+
+        <!-- ── YEAR 2 ── -->
+        <div class="tl-item tl-year-block" data-year="2">
+          <div class="tl-year-marker">Year 2 · 2023–24</div>
+        </div>
+        <div class="tl-item reveal" data-year="2">
+          <div class="tl-connector"><div class="tl-dot leader"></div><div class="tl-line"></div></div>
+          <div class="tl-card">
+            <div class="tl-card-top"><div class="tl-badge leader">Volunteer</div><div class="tl-date">Jul 2023</div></div>
+            <h3 class="tl-title">Jidnyasa 2K23 — Engineering Project Exhibition</h3>
+            <p class="tl-org"><i class="fa fa-building"></i> Centre for Engineering Exploration · MIT Chh. Sambhajinagar</p>
+            <p class="tl-desc">Volunteered at the Jidnyasa-2K23 Engineering Exploration Project Exhibition on 20th July 2023. Assisted in managing project stalls, guiding student participants, and supporting event operations.</p>
+            <div class="tl-tags"><span>Volunteer</span><span>Engineering Expo</span><span>MIT</span></div>
+          </div>
+        </div>
+
+        <!-- ── YEAR 3 ── -->
+        <div class="tl-item tl-year-block" data-year="3">
+          <div class="tl-year-marker">Year 3 · 2023–24</div>
+        </div>
+        <div class="tl-item reveal" data-year="3">
+          <div class="tl-connector"><div class="tl-dot leader"></div><div class="tl-line"></div></div>
+          <div class="tl-card">
+            <div class="tl-card-top"><div class="tl-badge leader">Cultural</div><div class="tl-date">Mar 2024</div></div>
+            <h3 class="tl-title">Kalavihangam 2K24 — Cultural Volunteer</h3>
+            <p class="tl-org"><i class="fa fa-building"></i> MIT Chh. Sambhajinagar</p>
+            <p class="tl-desc">Volunteered in the Cultural committee of Kalavihangam 2024, MIT's annual cultural festival, organized on 29th &amp; 30th March 2024. Represented the CSE department in event coordination.</p>
+            <div class="tl-tags"><span>Cultural</span><span>CSE</span><span>MIT</span></div>
+          </div>
+        </div>
+
+        <!-- ── YEAR 4 ── -->
+        <div class="tl-item tl-year-block" data-year="4">
+          <div class="tl-year-marker">Year 4 · 2024–25</div>
+        </div>
+        <div class="tl-item reveal" data-year="4">
+          <div class="tl-connector"><div class="tl-dot hackathon"></div><div class="tl-line"></div></div>
+          <div class="tl-card featured winner-tl">
+            <div class="featured-glow gold-glow"></div>
+            <div class="tl-card-top">
+              <div class="tl-badge" style="background:rgba(245,158,11,0.2);color:#fbbf24;">🏆 Winner</div>
+              <div class="tl-date">2024</div>
+            </div>
+            <h3 class="tl-title">Wings Hackathon — AI Hackathon · 1st Place</h3>
+            <p class="tl-org"><i class="fa fa-building"></i> GECA · Govt. College of Engineering · Chh. Sambhajinagar, Maharashtra</p>
+            <p class="tl-desc">Won the Wings Hackathon, an AI-focused inter-college hackathon held at GECA. Competed against teams from multiple colleges across Maharashtra and secured 1st place.</p>
+            <div class="tl-tags"><span>AI/ML</span><span>Hackathon</span><span>Winner</span><span>GECA</span></div>
+            <div class="tl-achievement" style="background:rgba(245,158,11,0.15);color:#fbbf24;">
+              <i class="fa fa-trophy"></i> 1st Place — Wings Hackathon, GECA
+            </div>
+          </div>
+        </div>
+        <div class="tl-item reveal" data-year="4">
+          <div class="tl-connector"><div class="tl-dot hackathon"></div><div class="tl-line"></div></div>
+          <div class="tl-card featured">
+            <div class="featured-glow"></div>
+            <div class="tl-card-top"><div class="tl-badge hackathon">Hackathon</div><div class="tl-date">Jul 2024</div></div>
+            <h3 class="tl-title">NewGenAI Hackathon 2024 — Student Coordinator</h3>
+            <p class="tl-org"><i class="fa fa-building"></i> MIT Chh. Sambhajinagar × Findability Sciences Pvt. Ltd.</p>
+            <p class="tl-desc">Served as Student Coordinator for the NewGenAI Hackathon 2024, managing event logistics, student teams, and coordination with industry partners from 6th–27th July 2024.</p>
+            <div class="tl-tags"><span>AI/ML</span><span>Event Coordination</span><span>Leadership</span></div>
+            <div class="tl-achievement"><i class="fa fa-star"></i> Appreciated by MIT &amp; Findability Sciences</div>
+          </div>
+        </div>
+        <div class="tl-item reveal" data-year="4">
+          <div class="tl-connector"><div class="tl-dot leader"></div><div class="tl-line"></div></div>
+          <div class="tl-card">
+            <div class="tl-card-top"><div class="tl-badge leader">Secretary</div><div class="tl-date">2024–25</div></div>
+            <h3 class="tl-title">Secretary — CSE Department (ACTS Committee)</h3>
+            <p class="tl-org"><i class="fa fa-building"></i> Dept. of CSE · MIT Chh. Sambhajinagar</p>
+            <p class="tl-desc">Worked as Secretary of the CSE Department ACTS Committee, leading event management, documentation, and student coordination activities across all department events.</p>
+            <div class="tl-tags"><span>Leadership</span><span>Secretary</span><span>ACTS</span><span>CSE</span></div>
+          </div>
+        </div>
+        <div class="tl-item reveal" data-year="4">
+          <div class="tl-connector"><div class="tl-dot leader"></div><div class="tl-line"></div></div>
+          <div class="tl-card">
+            <div class="tl-card-top"><div class="tl-badge leader">Committee</div><div class="tl-date">2025</div></div>
+            <h3 class="tl-title">Technophilia 2025 — Managerial Committee</h3>
+            <p class="tl-org"><i class="fa fa-building"></i> MIT Chh. Sambhajinagar</p>
+            <p class="tl-desc">Served as Managerial Committee Member for Technophilia 2025, handling event planning, execution, and team coordination for the annual technical festival.</p>
+            <div class="tl-tags"><span>Leadership</span><span>Event Management</span><span>Technophilia</span></div>
+          </div>
+        </div>
+        <div class="tl-item reveal" data-year="4">
+          <div class="tl-connector"><div class="tl-dot leader"></div><div class="tl-line"></div></div>
+          <div class="tl-card featured">
+            <div class="featured-glow"></div>
+            <div class="tl-card-top"><div class="tl-badge leader">Committee</div><div class="tl-date">Mar 2025</div></div>
+            <h3 class="tl-title">Vichar Vistar 2K25 — Organizing Committee</h3>
+            <p class="tl-org"><i class="fa fa-building"></i> ACTS · Dept. of CSE · MIT Chh. Sambhajinagar</p>
+            <p class="tl-desc">Served as Organizing Committee member for "Vichar Vistar 2K25", a Book Comprehension Competition on "The 7 Habits of Highly Effective People" on March 10, 2025.</p>
+            <div class="tl-tags"><span>Organizing</span><span>CSE Dept.</span><span>Book Competition</span></div>
+            <div class="tl-achievement"><i class="fa fa-certificate"></i> Certificate of Appreciation — MIT CSE</div>
+          </div>
+        </div>
+        <div class="tl-item reveal" data-year="4">
+          <div class="tl-connector"><div class="tl-dot hackathon"></div><div class="tl-line"></div></div>
+          <div class="tl-card featured">
+            <div class="featured-glow"></div>
+            <div class="tl-card-top">
+              <div class="tl-badge" style="background:rgba(16,185,129,0.2);color:#34d399;">💼 Internship</div>
+              <div class="tl-date">2025 · Ongoing</div>
+            </div>
+            <h3 class="tl-title">Software Development Intern — Paarsh Infotech</h3>
+            <p class="tl-org"><i class="fa fa-building"></i> Paarsh Infotech · Chh. Sambhajinagar</p>
+            <p class="tl-desc">Currently working as a Software Development Intern at Paarsh Infotech, gaining hands-on industry experience building and deploying real-world web applications in a professional team environment.</p>
+            <div class="tl-tags"><span>Full Stack</span><span>Industry Experience</span><span>Live Projects</span></div>
+            <div class="tl-achievement" style="background:rgba(16,185,129,0.15);color:#34d399;">
+              <i class="fa fa-briefcase"></i> Currently Active — 2025
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end timeline-list -->
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       PROJECTS
+  ════════════════════════════════ -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">What I've Built</div>
+        <h2 class="section-title">Featured<br/><em>Projects</em></h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal" style="--delay:0.1s">
+          <div class="project-num">01</div>
+          <div class="project-icon-wrap"><i class="fa fa-comments"></i></div>
+          <h3 class="project-title">CommCore</h3>
+          <div class="project-year">2025 · Async Collaboration System</div>
+          <p class="project-desc">Asynchronous collaboration system enabling file sharing, task management, and communication without real-time dependency. Role-based access, structured workflows, and secure document handling.</p>
+          <div class="project-stack">
+            <span>React</span><span>Node.js</span><span>MySQL</span><span>Firebase</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/karpesakshi-24" target="_blank" class="proj-link"><i class="fab fa-github"></i> Code</a>
+            <a href="#" class="proj-link live"><i class="fa fa-external-link-alt"></i> Live</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal" style="--delay:0.2s">
+          <div class="project-num">02</div>
+          <div class="project-icon-wrap"><i class="fa fa-wallet"></i></div>
+          <h3 class="project-title">SpareShare</h3>
+          <div class="project-year">2025 · Smart Expense Manager</div>
+          <p class="project-desc">AI-powered smart expense platform with automated categorization, receipt analysis via Gemini AI, group balances, and real-time expense tracking. Secure auth and responsive design.</p>
+          <div class="project-stack">
+            <span>Next.js</span><span>Tailwind CSS</span><span>Convex</span><span>Gemini AI</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/karpesakshi-24" target="_blank" class="proj-link"><i class="fab fa-github"></i> Code</a>
+            <a href="#" class="proj-link live"><i class="fa fa-external-link-alt"></i> Live</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal" style="--delay:0.3s">
+          <div class="project-num">03</div>
+          <div class="project-icon-wrap"><i class="fa fa-file-alt"></i></div>
+          <h3 class="project-title">Forge AI</h3>
+          <div class="project-year">2025 · Smart Resume Analyzer</div>
+          <p class="project-desc">AI resume analyzer evaluating content quality, readability, and key skill alignment. Provides structured improvement suggestions. Deployed on Firebase for fast, secure hosting.</p>
+          <div class="project-stack">
+            <span>JavaScript</span><span>TypeScript</span><span>CSS</span><span>Firebase</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/karpesakshi-24" target="_blank" class="proj-link"><i class="fab fa-github"></i> Code</a>
+            <a href="#" class="proj-link live"><i class="fa fa-external-link-alt"></i> Live</a>
+          </div>
+        </div>
+
+      </div>
+      <!-- GitHub CTA banner -->
+      <div class="github-cta reveal">
+        <div class="github-cta-inner">
+          <i class="fab fa-github github-cta-icon"></i>
+          <div>
+            <div class="github-cta-title">More on GitHub</div>
+            <div class="github-cta-sub">Explore all repos, contributions &amp; open-source work</div>
+          </div>
+          <a href="https://github.com/karpesakshi-24" target="_blank" class="btn btn-outline github-cta-btn">
+            View GitHub Profile <i class="fa fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       CO-CURRICULAR CERTIFICATES
+  ════════════════════════════════ -->
+  <section class="certs-section" id="cocurricular">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Academic &amp; Technical</div>
+        <h2 class="section-title">Co-Curricular<br/><em>Certificates</em></h2>
+        <p class="section-sub">Courses, workshops &amp; technical training programs related to my field of Computer Science.</p>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-card reveal" style="--delay:0.05s">
+          <div class="cert-icon" style="background:rgba(234,88,12,0.15);color:#ea580c;"><i class="fas fa-robot"></i></div>
+          <div class="cert-info">
+            <div class="cert-name">Bootcamp on Robotics Process Automation</div>
+            <div class="cert-issuer">NIELIT Aurangabad × MIT — FutureSkills PRIME, Govt. of India</div>
+            <div class="cert-meta">Year 4 · Sep 2024 <span class="cert-status verified">Verified</span></div>
+          </div>
+        </div>
+        <div class="cert-card reveal" style="--delay:0.1s">
+          <div class="cert-icon" style="background:rgba(16,185,129,0.15);color:#10b981;"><i class="fas fa-brain"></i></div>
+          <div class="cert-info">
+            <div class="cert-name">SAWIT.AI Learnathon — Generative AI Fundamentals</div>
+            <div class="cert-issuer">GUVI / AICTE / Nasscom / HCLTech (South Asian Women in Tech)</div>
+            <div class="cert-meta">Year 4 · Oct 2024 <span class="cert-status verified">Verified</span></div>
+          </div>
+        </div>
+        <div class="cert-card reveal" style="--delay:0.15s">
+          <div class="cert-icon" style="background:rgba(59,130,246,0.15);color:#3b82f6;"><i class="fab fa-google"></i></div>
+          <div class="cert-info">
+            <div class="cert-name">Google GenAI Study Jams</div>
+            <div class="cert-issuer">GDSC MIT-A · Google Cloud / Gemini / Google AI</div>
+            <div class="cert-meta">Year 4 · Oct 2024 <span class="cert-status verified">Verified</span></div>
+          </div>
+        </div>
+        <div class="cert-card reveal" style="--delay:0.2s">
+          <div class="cert-icon" style="background:rgba(37,99,235,0.15);color:#2563eb;"><i class="fas fa-hashtag"></i></div>
+          <div class="cert-info">
+            <div class="cert-name">Basics of Social Media &amp; Digital Marketing</div>
+            <div class="cert-issuer">NIELIT Aurangabad — FutureSkills PRIME, Govt. of India</div>
+            <div class="cert-meta">Year 4 · Apr 2025 <span class="cert-status verified">Verified</span></div>
+          </div>
+        </div>
+        <div class="cert-card reveal" style="--delay:0.25s">
+          <div class="cert-icon" style="background:rgba(139,92,246,0.15);color:#8b5cf6;"><i class="fas fa-desktop"></i></div>
+          <div class="cert-info">
+            <div class="cert-name">UI/UX Design using Figma — Workshop</div>
+            <div class="cert-issuer">GFG Student Chapter MIT-A</div>
+            <div class="cert-meta">Year 3 · Apr 2024 <span class="cert-status verified">Verified</span></div>
+          </div>
+        </div>
+        <div class="cert-card reveal" style="--delay:0.3s">
+          <div class="cert-icon" style="background:rgba(245,158,11,0.15);color:#f59e0b;"><i class="fas fa-chart-bar"></i></div>
+          <div class="cert-info">
+            <div class="cert-name">Business Intelligence with Advanced Excel &amp; Power BI</div>
+            <div class="cert-issuer">MIT CSE Dept. × Cloudthat Technologies Pvt. Ltd.</div>
+            <div class="cert-meta">Year 3 · Feb 2024 <span class="cert-status verified">Verified</span></div>
+          </div>
+        </div>
+        <div class="cert-card reveal" style="--delay:0.35s">
+          <div class="cert-icon" style="background:rgba(6,182,212,0.15);color:#06b6d4;"><i class="fab fa-linux"></i></div>
+          <div class="cert-info">
+            <div class="cert-name">Linux Workshop</div>
+            <div class="cert-issuer">GFG Student Chapter MIT-A</div>
+            <div class="cert-meta">Year 3 · Mar 2024 <span class="cert-status verified">Verified</span></div>
+          </div>
+        </div>
+        <div class="cert-card reveal" style="--delay:0.4s">
+          <div class="cert-icon" style="background:rgba(59,130,246,0.15);color:#3b82f6;"><i class="fas fa-microchip"></i></div>
+          <div class="cert-info">
+            <div class="cert-name">"AllGoRythms" AI &amp; ML Workshop</div>
+            <div class="cert-issuer">Microsoft Learn Student Club (MLSC MITA)</div>
+            <div class="cert-meta">Year 4 · Dec 2024 <span class="cert-status verified">Verified</span></div>
+          </div>
+        </div>
+        <div class="cert-card reveal" style="--delay:0.45s">
+          <div class="cert-icon" style="background:rgba(16,185,129,0.15);color:#10b981;"><i class="fab fa-python"></i></div>
+          <div class="cert-info">
+            <div class="cert-name">Basics of Python</div>
+            <div class="cert-issuer">Infosys Springboard</div>
+            <div class="cert-meta">Year 2 · Jul 2023 <span class="cert-status verified">Verified</span></div>
+          </div>
+        </div>
+        <div class="cert-card reveal" style="--delay:0.5s">
+          <div class="cert-icon" style="background:rgba(245,158,11,0.15);color:#f59e0b;"><i class="fab fa-js"></i></div>
+          <div class="cert-info">
+            <div class="cert-name">Fundamentals of JavaScript (Rock-Paper-Scissors)</div>
+            <div class="cert-issuer">IBM / Cognitive Class (cognitiveclass.ai)</div>
+            <div class="cert-meta">Year 2 · Oct 2023 <span class="cert-status verified">Verified</span></div>
+          </div>
+        </div>
+        <div class="cert-card reveal" style="--delay:0.55s">
+          <div class="cert-icon" style="background:rgba(239,68,68,0.15);color:#ef4444;"><i class="fab fa-html5"></i></div>
+          <div class="cert-info">
+            <div class="cert-name">HTML Attributes and Tags</div>
+            <div class="cert-issuer">Great Learning Academy</div>
+            <div class="cert-meta">Year 2 · Sep 2023 <span class="cert-status">Completed</span></div>
+          </div>
+        </div>
+        <div class="cert-card reveal" style="--delay:0.6s">
+          <div class="cert-icon" style="background:rgba(59,130,246,0.15);color:#3b82f6;"><i class="fab fa-css3-alt"></i></div>
+          <div class="cert-info">
+            <div class="cert-name">CSS Tutorial</div>
+            <div class="cert-issuer">Great Learning Academy</div>
+            <div class="cert-meta">Year 2 · Sep 2023 <span class="cert-status">Completed</span></div>
+          </div>
+        </div>
+        <div class="cert-card reveal" style="--delay:0.65s">
+          <div class="cert-icon" style="background:rgba(14,165,233,0.15);color:#0ea5e9;"><i class="fas fa-laptop"></i></div>
+          <div class="cert-info">
+            <div class="cert-name">Future Workspace Skills Training 2022–23</div>
+            <div class="cert-issuer">American India Foundation (AIF) × Dell Technologies</div>
+            <div class="cert-meta">Year 2 · 2022–23 <span class="cert-status verified">Verified</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       EXTRA-CURRICULAR ACHIEVEMENTS
+  ════════════════════════════════ -->
+  <section class="extra-section" id="extracurricular">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Beyond the Classroom</div>
+        <h2 class="section-title">Extra-Curricular<br/><em>Achievements</em></h2>
+        <p class="section-sub">Events, competitions, cultural activities, and leadership roles that shaped my college experience.</p>
+      </div>
+      <div class="extra-grid">
+        <div class="extra-card winner-card reveal" style="--delay:0.05s">
+          <div class="winner-ribbon">🏆 WINNER</div>
+          <div class="extra-icon" style="background:rgba(245,158,11,0.2);border-color:rgba(245,158,11,0.3);">
+            <i class="fas fa-trophy" style="color:#f59e0b;font-size:26px;"></i>
+          </div>
+          <div class="extra-badge amber">AI Hackathon — 1st Place</div>
+          <h3 class="extra-title">Wings Hackathon Winner</h3>
+          <div class="extra-org">GECA · Govt. College of Engineering &amp; Technology · Chh. Sambhajinagar, MH</div>
+          <div class="extra-date"><i class="fa fa-calendar-alt"></i> 2024</div>
+          <p class="extra-desc">Won the Wings Hackathon, an AI-focused inter-college hackathon held at Government College of Engineering &amp; Technology, Chh. Sambhajinagar. Secured 1st place.</p>
+          <div class="extra-award gold"><i class="fa fa-medal"></i> 1st Place — Wings Hackathon, GECA</div>
+        </div>
+        <div class="extra-card reveal" style="--delay:0.1s">
+          <div class="extra-icon"><i class="fas fa-rocket" style="color:#3b82f6;"></i></div>
+          <div class="extra-badge blue">Student Coordinator</div>
+          <h3 class="extra-title">NewGenAI Hackathon 2024</h3>
+          <div class="extra-org">MIT Chh. Sambhajinagar × Findability Sciences Pvt. Ltd.</div>
+          <div class="extra-date"><i class="fa fa-calendar-alt"></i> July 6–27, 2024</div>
+          <p class="extra-desc">Coordinated the NewGenAI Hackathon as Student Coordinator — managing participant teams, working with industry partners at Findability Sciences, and ensuring smooth 3-week execution.</p>
+          <div class="extra-award"><i class="fa fa-award"></i> Certificate of Appreciation — MIT &amp; Findability Sciences</div>
+        </div>
+        <div class="extra-card reveal" style="--delay:0.15s">
+          <div class="extra-icon"><i class="fas fa-pen-nib" style="color:#f43f5e;"></i></div>
+          <div class="extra-badge coral">Secretary</div>
+          <h3 class="extra-title">Secretary — CSE Dept. (ACTS Committee)</h3>
+          <div class="extra-org">Dept. of CSE · MIT Chh. Sambhajinagar</div>
+          <div class="extra-date"><i class="fa fa-calendar-alt"></i> 2024–25</div>
+          <p class="extra-desc">Worked as Secretary of the CSE Department ACTS Committee — leading event management, documentation, and student coordination across all department events.</p>
+          <div class="extra-award"><i class="fa fa-certificate"></i> Department Secretary — CSE ACTS</div>
+        </div>
+        <div class="extra-card reveal" style="--delay:0.2s">
+          <div class="extra-icon"><i class="fas fa-bullhorn" style="color:#8b5cf6;"></i></div>
+          <div class="extra-badge purple">Marketing &amp; PR</div>
+          <h3 class="extra-title">Microsoft Learn Student Club — Marketing &amp; PR</h3>
+          <div class="extra-org">MLSC MITA · MIT Chh. Sambhajinagar</div>
+          <div class="extra-date"><i class="fa fa-calendar-alt"></i> 2024–25</div>
+          <p class="extra-desc">Managed event promotions, PR communication, and outreach activities to increase student participation. Anchored and actively participated in NewGenAI events as host.</p>
+          <div class="extra-award"><i class="fa fa-certificate"></i> Active Club Member — MLSC</div>
+        </div>
+        <div class="extra-card reveal" style="--delay:0.25s">
+          <div class="extra-icon"><i class="fas fa-cogs" style="color:#10b981;"></i></div>
+          <div class="extra-badge green">Managerial Committee</div>
+          <h3 class="extra-title">Technophilia 2025 — Managerial Committee</h3>
+          <div class="extra-org">MIT Chh. Sambhajinagar</div>
+          <div class="extra-date"><i class="fa fa-calendar-alt"></i> 2025</div>
+          <p class="extra-desc">Served as Managerial Committee Member for Technophilia 2025, MIT's annual technical festival — handling event planning, execution, and team coordination throughout the event.</p>
+          <div class="extra-award"><i class="fa fa-certificate"></i> Managerial Committee — Technophilia 2025</div>
+        </div>
+        <div class="extra-card reveal" style="--delay:0.3s">
+          <div class="extra-icon"><i class="fas fa-users" style="color:#8b5cf6;"></i></div>
+          <div class="extra-badge purple">Organizing Committee</div>
+          <h3 class="extra-title">Vichar Vistar 2K25</h3>
+          <div class="extra-org">ACTS · CSE Dept. · MIT Chh. Sambhajinagar</div>
+          <div class="extra-date"><i class="fa fa-calendar-alt"></i> March 10, 2025</div>
+          <p class="extra-desc">Organizing committee member for a Book Comprehension Competition on "The 7 Habits of Highly Effective People". Recognized for critical thinking and commitment to intellectual growth.</p>
+          <div class="extra-award"><i class="fa fa-award"></i> Certificate of Appreciation — MIT CSE</div>
+        </div>
+        <div class="extra-card reveal" style="--delay:0.35s">
+          <div class="extra-icon"><i class="fas fa-music" style="color:#f59e0b;"></i></div>
+          <div class="extra-badge amber">Cultural Volunteer</div>
+          <h3 class="extra-title">Kalavihangam 2K24</h3>
+          <div class="extra-org">MIT Chh. Sambhajinagar — Annual Cultural Festival</div>
+          <div class="extra-date"><i class="fa fa-calendar-alt"></i> March 29–30, 2024</div>
+          <p class="extra-desc">Volunteered in the Cultural committee of Kalavihangam 2024. Represented the CSE department in organizing and coordinating activities.</p>
+          <div class="extra-award"><i class="fa fa-certificate"></i> Certificate of Participation</div>
+        </div>
+        <div class="extra-card reveal" style="--delay:0.4s">
+          <div class="extra-icon"><i class="fas fa-flask" style="color:#10b981;"></i></div>
+          <div class="extra-badge green">Volunteer</div>
+          <h3 class="extra-title">Jidnyasa 2K23 — Engineering Exploration Expo</h3>
+          <div class="extra-org">Centre for Engineering Exploration · MIT Chh. Sambhajinagar</div>
+          <div class="extra-date"><i class="fa fa-calendar-alt"></i> July 20, 2023</div>
+          <p class="extra-desc">Volunteered at the Jidnyasa-2K23 Project Exhibition, supporting MIT's engineering exploration initiative by managing displays and guiding visitors.</p>
+          <div class="extra-award"><i class="fa fa-certificate"></i> Certificate Awarded by MIT</div>
+        </div>
+        <div class="extra-card reveal" style="--delay:0.45s">
+          <div class="extra-icon"><i class="fas fa-code" style="color:#f43f5e;"></i></div>
+          <div class="extra-badge coral">2× Competitions</div>
+          <h3 class="extra-title">EventZen — Template Designing &amp; Coding</h3>
+          <div class="extra-org">IGNITE Student Association · Dept. of EST · MIT Aurangabad</div>
+          <div class="extra-date"><i class="fa fa-calendar-alt"></i> January 12–14, 2023</div>
+          <p class="extra-desc">Participated in both Template Designing and Coding Competitions at EventZen, a multi-event tech fest organized by the IGNITE Student Association, MIT Aurangabad.</p>
+          <div class="extra-award"><i class="fa fa-certificate"></i> 2× Certificates of Participation</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       CONTACT
+  ════════════════════════════════ -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-inner reveal">
+        <div class="contact-left">
+          <div class="section-label">Say Hello</div>
+          <h2 class="section-title">Let's connect &amp;<br/><em>grow together</em></h2>
+          <p class="contact-desc">Open to internships, collaborative projects, and opportunities. I reply fast!</p>
+          <div class="social-links">
+            <a href="mailto:karpes603@gmail.com" class="social-link">
+              <i class="fa fa-envelope"></i><span>karpes603@gmail.com</span>
+            </a>
+            <a href="tel:9764607024" class="social-link">
+              <i class="fa fa-phone"></i><span>+91 97646 07024</span>
+            </a>
+            <a href="https://www.linkedin.com/in/sakshi-karpe-a77474248/" target="_blank" class="social-link social-link-linkedin">
+              <i class="fab fa-linkedin"></i>
+              <div class="social-link-text">
+                <span class="social-link-label">LinkedIn</span>
+                <span class="social-link-sub">sakshi-karpe-a77474248</span>
+              </div>
+            </a>
+            <a href="https://github.com/karpesakshi-24" target="_blank" class="social-link social-link-github">
+              <i class="fab fa-github"></i>
+              <div class="social-link-text">
+                <span class="social-link-label">GitHub</span>
+                <span class="social-link-sub">karpesakshi-24</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group"><label>Your Name</label><input type="text" placeholder="John Doe" required/></div>
+            <div class="form-group"><label>Email Address</label><input type="email" placeholder="john@example.com" required/></div>
+            <div class="form-group"><label>Message</label><textarea rows="4" placeholder="Hi Sakshi! I'd love to connect..." required></textarea></div>
+            <button type="submit" class="btn btn-primary full-width">Send Message <i class="fa fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo"><span class="logo-bracket">&lt;</span>SK<span class="logo-bracket">/&gt;</span></div>
+        <div class="footer-text">Built by <strong>Sakshi Santosh Karpe</strong> · CSE, MIT Chh. Sambhajinagar · Batch 2026</div>
+        <div class="footer-socials">
+          <a href="https://github.com/karpesakshi-24" target="_blank" class="footer-social-link" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/sakshi-karpe-a77474248/" target="_blank" class="footer-social-link footer-linkedin" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
